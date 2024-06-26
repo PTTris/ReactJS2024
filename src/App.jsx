@@ -1,10 +1,14 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import Todo from "./components/Todo/Todo";
+import Footer from "./components/Layout/Footer";
+import Header from "./components/Layout/Header";
 
 const App = () => {
     return (
         <>
-            <Todo />
+            <Header />
+            <Outlet />
+            <Footer />
         </>
     );
 };
